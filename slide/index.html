@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"  />
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/adslide.js"></script>
+<style>
+	html,body{ width:100%; height:100%; margin:0px; padding:0px; }
+</style>
+
+</head>
+
+<body>
+<p class="t">设置高度宽度</p>
+  <div class="adslide" style="height:100px; width:100%;">
+	<div class="list">
+    	<img class="item" src="img/test/1.jpg"  />
+        <img class="item" src="img/test/2.jpg" />
+        <img class="item" src="img/test/3.jpg"  />
+        <img class="item" src="img/test/4.jpg" />
+        <img class="item" src="img/test/5.jpg"  />
+    </div>
+</div> 
+
+<p class="t">设置高度</p>
+<div class="adslide" style="height:200px">
+	<div class="list">
+    	<img class="item" src="img/test/1.jpg"  />
+        <img class="item" src="img/test/2.jpg" />
+        <img class="item" src="img/test/3.jpg"  />
+        <img class="item" src="img/test/4.jpg" />
+        <img class="item" src="img/test/5.jpg"  />
+    </div>
+</div>
+
+<p class="t">设置宽度，比列和margin</p>
+<div class="adslide" style="width:90%">
+	<div class="list">
+    	<img class="item" src="img/test/1.jpg"  />
+        <img class="item" src="img/test/2.jpg" />
+        <img class="item" src="img/test/3.jpg"  />
+        <img class="item" src="img/test/4.jpg" />
+        <img class="item" src="img/test/5.jpg"  />
+    </div>
+</div>
+<br />
+<br />
+<span></span>
+<script>
+$(document).ready(function(e) {
+	$(".adslide").first().slideAdvertise({});
+	$(".adslide").eq(1).slideAdvertise({});
+	$(".adslide").last().slideAdvertise({margin:10,radio:0.5});
+});
+
+</script>
+</body>
+</html>

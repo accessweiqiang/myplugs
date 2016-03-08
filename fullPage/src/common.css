@@ -1,0 +1,17 @@
+/* CSS Document */
+html, body, div, span, applet, object, iframe, table, caption, 
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, 
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend,input{ padding: 0px; margin: 0px; list-style:none;} 
+body{font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14px; background-color:#eceff1; color:#1a1a1a;}
+/*布局类*/
+.site-header{ width:100%; overflow:hidden;padding-top:28px;}
+.site-header .top-nav{ position:fixed; top:0px; left:0px; right:0px; width:100%; height:28px; line-height:28px; background-color:#263238; color:#fff; font-size:12px;}
+.site-body{ width:100%;}
+.site-footer{ background-color:#263238;}
+.wrap{ width:1000px; overflow:hidden; margin:0px auto;}
+.wrap .inner{ background:#fff; padding:20px;}
+/*功能类*/
+.clearfix:after{content:".";visibility:hidden;height:0px;clear:both; display:block;}

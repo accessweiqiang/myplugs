@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	.a{ height:100px; width:100px; background-color:#06C; position:relative;}
+	label{ margin-left:20px;  margin-bottom:20px; display:inline-block; font-weight:bold;}
+	button{ width:100px; height:30px;}
+	@-webkit-keyframes myanimate{
+		0% { left:0px; }
+		
+		50% { background:#C3C; width:0px; height:0px; -webkit-transform:rotate(180deg) }
+		
+		100% { left:1000px;}
+	}
+	#keyframes{
+		background-color:#0CF;
+		position:relative;
+		height:100px;
+		width:100px;
+		-webkit-animation:myanimate 3s ease-in-out infinite alternate;
+	}
+</style>
+<script type="text/javascript" src="src/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="src/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+<div style="width:600px; height:100px; border:#f00 solid 1px;  margin: 0px auto;">
+	<div class="a"></div>
+</div>    
+        <hr />
+ <label>linear<input type="radio" name="ra" value="linear" /></label>
+<label>swing<input type="radio" name="ra" value="swing" /></label>
+<label>easeInQuad<input type="radio" name="ra" value="easeInQuad" /></label>
+<label>easeOutQuad<input type="radio" name="ra" value="easeOutQuad" /></label>
+<label>easeInOutQuad<input type="radio" name="ra" value="easeInOutQuad" /></label>
+<label>easeInCubic<input type="radio" name="ra" value="easeInCubic" /></label>
+<label>easeOutCubic<input type="radio" name="ra" value="easeOutCubic" /></label>
+<label>easeOutElastic<input type="radio" name="ra" value="easeInOutCubic" /></label>
+<label>easeInQuart<input type="radio" name="ra" value="easeInQuart" /></label>
+<label>easeOutElastic<input type="radio" name="ra" value="easeOutElastic" /></label>
+<label>easeInOutQuart<input type="radio" name="ra" value="easeInOutQuart" /></label>
+<label>easeInQuint<input type="radio" name="ra" value="easeInQuint" /></label>
+<label>easeOutQuint<input type="radio" name="ra" value="easeOutQuint" /></label>
+<label>easeInOutQuint<input type="radio" name="ra" value="easeInOutQuint" /></label>
+<label>easeInExpo<input type="radio" name="ra" value="easeInExpo" /></label>
+<label>easeOutExpo<input type="radio" name="ra" value="easeOutExpo" /></label>
+<label>easeInOutExpo<input type="radio" name="ra" value="easeInOutExpo" /></label>
+<label>easeInSine<input type="radio" name="ra" value="easeInSine" /></label>
+<label>easeOutSine<input type="radio" name="ra" value="easeOutSine" /></label>
+<label>easeInOutSine<input type="radio" name="ra" value="easeInOutSine" /></label>
+<label>easeInCirc<input type="radio" name="ra" value="easeInCirc" /></label>
+<label>easeOutCirc<input type="radio" name="ra" value="easeOutCirc" /></label>
+<label>easeInOutCirc<input type="radio" name="ra" value="easeInOutCirc" /></label>
+<label>easeInElastic<input type="radio" name="ra" value="easeInElastic" /></label>
+<label>easeOutElastic<input type="radio" name="ra" value="easeOutElastic" /></label>
+<label>easeInOutElastic<input type="radio" name="ra" value="easeInOutElastic" /></label>
+<label>easeInBack<input type="radio" name="ra" value="easeInBack" /></label>
+<label>easeOutBack<input type="radio" name="ra" value="easeOutBack" /></label>
+<label>easeInOutBack<input type="radio" name="ra" value="easeInOutBack" /></label>
+<label>easeInBounce<input type="radio" name="ra" value="easeInBounce" /></label>
+<label>easeOutBounce<input type="radio" name="ra" value="easeOutBounce" /></label>
+<label>easeInOutBounce<input type="radio" name="ra" value="easeInOutBounce" /></label>
+   
+    <hr/>
+    <button id="b">go</button>
+    <button id="c">back</button>
+    <hr/>
+    <img src="src/a.png" width="686" height="848" />
+    <hr/>
+    <div style="width:1100px; height:100px; margin:50px auto; border:1px #999 solid">
+    	<div id="keyframes"></div>
+    </div>
+</body>
+<script>
+	$(document).ready(function(e) {
+		$("#b").click(function(){
+			if($(".a").is(":animated")) { $(".a").stop(true,true) ; return false;}
+			 $(".a").animate({ left:"500px"},2000,$("input:checked").val())
+			 console.log($("input:checked").val());	
+		})
+       
+		$("#c").click(function(){
+			if($(".a").is(":animated")) { $(".a").stop(true,true); return false;}
+			 $(".a").animate({ left:"0px"},2000,$("input:checked").val())
+			 console.log($("input:checked").val());	
+		})
+    });
+</script>
+</html>

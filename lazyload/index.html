@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片lazyload</title>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript" src="jquery.lazyload.js"></script>
+</head>
+
+<body>
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/bmw_m1_side.jpg" width="100%" height="480">
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/viper_1.jpg" width="100%" height="480">
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/bmw_m1_hood.jpg" width="100%" height="480">
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/corvette_pitstop.jpg" width="100%" height="480">
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/bmw_m3_gt.jpg" width="100%" height="480">
+<img class="lazy" data-original="6.jpg" width="100%" height="480">
+<img class="lazy" data-original="http://www.w3cways.com/demo/LazyLoad/img/viper_corner.jpg" width="100%" height="480">
+<img class="lazy" data-original="1.jpg" width="100%" height="480">
+
+</body>
+<script>
+$(function() {
+    $("img.lazy").lazyload({
+		ffect : "fadeIn" ,
+		event : "mouseover"
+	});
+});
+</script>
+</html>
