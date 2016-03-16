@@ -10,6 +10,14 @@
 .a::-webkit-scrollbar {display: none;}
 .b{ width:100%; white-space:nowrap; height:300px;}
 span{ display:inline-block;  height:30px; width:300px; background:#999;}
+p{ height:1000px;}
+.c{ height:100px; width:200px; background:#699; overflow:scroll;}
+.c p{ width:300px;}
+.c::-webkit-scrollbar {
+width: 13px;
+
+height: 13px;
+}
 </style>
 
 </head>
@@ -38,5 +46,13 @@ span{ display:inline-block;  height:30px; width:300px; background:#999;}
             <span>asdf</span>
         </div>
     </div>
+    
+    <div class="c">
+    <p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p><p>afds</p>
+
+
+
+    </div>
+    <p>asdf</p>
 </body>
 </html>
